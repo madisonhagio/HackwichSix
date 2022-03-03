@@ -40,6 +40,19 @@ UITableViewDelegate {
     
     var countriesToVisitArray = ["France", "Italy", "Mexico", "Canada", "Greece"]
     
+//HackwichSeven on your own
     
+var myFriendsHomeArray = ["Mililani", "Los Angeles"]
+    
+   var cellForRowAtIndex
+    
+    func tableView(_ tableView: UITableView, cellForRowAtIndex: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
+            let text = myFriendsHomeArray[IndexPath.row]
+            cell?.textLabel?.text = text
+            cell?.detailTextLabel?.text = myFriendsHomeArray[IndexPath.row]
+            return cell!
+        }
+
 }
 
