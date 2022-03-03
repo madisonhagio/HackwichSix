@@ -29,13 +29,17 @@ UITableViewDelegate {
         
         cell?.textLabel?/text = text
         
-        return cell 
+        return cell
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+//Part 9
+    
+    var countriesToVisitArray = ["France", "Italy", "Mexico", "Canada", "Greece"]
+    
+    
 }
 
