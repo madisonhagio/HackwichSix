@@ -27,7 +27,7 @@ UITableViewDelegate {
     {
         let cell = tableView.dequeReusableCell(withIdentifier: "cellReuseIdentifier")
         
-        lext text = myFriendsArray[indexPath.row]
+        text; text = myFriendsArray[indexPath.row]
         
         cell?.textLabel?/text = text
         
@@ -44,7 +44,12 @@ UITableViewDelegate {
         let dict = NSDictionary(contentsOfFile: path!)
                  
         restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
+    //Hackwich 10 Problem Set #1
         
+        var myFriendsArray
+        
+        let myFriendsArray = ["restaurantImages"]
+    
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -87,4 +92,5 @@ let imageIndex = tableView.indexPathForSelectedRow?.row
         
         
 }
+    
 
